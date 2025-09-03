@@ -73,10 +73,18 @@ o ejecutar la clase directamente desde un IDE.
 Salida esperada:
 
 ```
-Tabla 'employees' encontrada solo en HRVertical_Create_Tables_Oracle_5.1.0.sql
-   - Columna 'date_time' difiere de tipo: HRVertical_Create_Tables_Oracle_4.6.22.sql=DATE vs HRVertical_Create_Tables_Oracle_5.1.0.sql=TIMESTAMP(3)
-   - Columna 'id_person' difiere de tipo: HRVertical_Create_Tables_Oracle_5.1.0.sql=NUMERIC(12,0) vs HRVertical_Create_Tables_Oracle_5.1.0.sql=NUMBER(12)
-   - Columna 'use_callback' difiere de tipo: HRVertical_Create_Tables_Oracle_4.6.22.sql=CHAR(1) vs HRVertical_Create_Tables_Oracle_5.1.0.sql=CHAR
+- Tablas en C:\Users\Alex Villatoro\Desktop\HRVertical_Migration_Create_Tables_Oracle_5.1.0.sql que faltan en C:\Users\Alex Villatoro\Desktop\HRVertical_Create_Tables_Oracle_5.1.0.sql:
+  (Ninguna)
+
+- Tablas en C:\Users\Alex Villatoro\Desktop\HRVertical_Create_Tables_Oracle_5.1.0.sql que faltan en C:\Users\Alex Villatoro\Desktop\HRVertical_Migration_Create_Tables_Oracle_5.1.0.sql:
+  - authentication_type
+
+- Tabla: biometric_identity
+   - C:\Users\Alex Villatoro\Desktop\HRVertical_Migration_Create_Tables_Oracle_5.1.0.sql tiene 12 columnas
+   - C:\Users\Alex Villatoro\Desktop\HRVertical_Create_Tables_Oracle_5.1.0.sql tiene 22 columnas
+   - Faltan en C:\Users\Alex Villatoro\Desktop\HRVertical_Migration_Create_Tables_Oracle_5.1.0.sql: [card_expiration_date, card_is_valid, date_process, face_matching_score, gender, id_back_processed, id_card_front_user_photo, id_front_processed, id_front_processed_blur, mrz_data]
+   - Columna 'id_biometric_provider' difiere de tipo: C:\Users\Alex Villatoro\Desktop\HRVertical_Migration_Create_Tables_Oracle_5.1.0.sql=int vs C:\Users\Alex Villatoro\Desktop\HRVertical_Create_Tables_Oracle_5.1.0.sql=number(10)
+   - Columna 'id_person' difiere de tipo: C:\Users\Alex Villatoro\Desktop\HRVertical_Migration_Create_Tables_Oracle_5.1.0.sql=numeric(12,0) vs C:\Users\Alex Villatoro\Desktop\HRVertical_Create_Tables_Oracle_5.1.0.sql=number(12)
 ```
 
 ---
